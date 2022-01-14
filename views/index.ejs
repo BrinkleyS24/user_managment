@@ -2,10 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <%- include('./partials/header') %>
 </head>
 
 <body>
@@ -13,7 +10,7 @@
         <div class="container">
             <div class="box-nav d-flex justify-between">
                 <a href="/index/add-user" class="border-shadow">
-                    <span>New User <i class="fas fa-user"></i></span>
+                    <span>New User</i></span>
                 </a>
             </div>
 
@@ -37,7 +34,9 @@
                                     <%= i + 1 %>
                                 </td>
                                 <td>
-                                    <%= users[i].name %>
+                                    <a href='/index/<%= users[i]._id%> %>'>
+                                        <%=users[i].name %>
+                                    </a>
                                 </td>
                                 <td>
                                     <%= users[i].email %>

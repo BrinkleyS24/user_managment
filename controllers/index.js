@@ -24,4 +24,11 @@ indexRouter.post("/", (req, res) => {
         res.redirect('/index');
     });
 })
+
+//Show 
+indexRouter.get('/:id', (req, res) => {
+    User.findById(req.params.id, (err, foundUser) => {
+        res.render('show', { user: foundUser });
+    });
+});
 module.exports = indexRouter;
