@@ -2,15 +2,93 @@ a {
     text-decoration: none;
 }
 
+input[type=text], select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid orange;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
 
-div.show-icon i.fa { 
-    display: inline-block;
-    font-size: 50px;
-}
-div.show-icon img { 
-    display: none; 
-}
+  
+
+  
+  /* Style the submit button */
+  input[type=submit] {
+    background-color: orange;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: right;
+  }
+
+  
+  
+  
+  .container {
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 20px;
+  }
+
+  .index {
+      margin-top: 3rem;
+      background-color: white;
+      border: 1px solid black;
+  }
+  
+  .index a {
+      color: orange;
+
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
 button {
     background: none;
     border: none;
+}
+
+.header {
+    font-weight: bold;
+    background-color: orange;
+    height: 40px;
+}
+
+.text-center {
+    padding-top: 10px;
+}
+.filter {
+    margin-bottom: 5rem;
+}
+
+.filter a {
+    color: black;
+}
+
+.inline {
+    display: inline-block;
 }
