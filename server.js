@@ -42,7 +42,7 @@ app.set('view engine', 'ejs')
 // populates req.body with parsed info from forms - if no data from forms will return an empty object {}
 app.use(express.urlencoded({ extended: false }));// extended: false - does not allow nested objects in query strings
 app.use(express.json());// returns middleware that only parses JSON - may or may not need it depending on your project
-app.use(timeout('15s'));
+app.use(timeout('40s'));
 app.use(morgan('dev'));
 app.use(methodOverride('_method'));
 app.use('/index', indexController)
