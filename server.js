@@ -30,6 +30,7 @@ db.on('error', (err) => console.log(err.message + ' is mongod not running?'));
 db.on('connected', () => console.log('mongod connected: ', MONGODB_URI));
 db.on('disconnected', () => console.log('mongod disconnected'));
 
+console.log("MONGODB_URI", process.env.MONGODB_URI);
 
 app.set('view engine', 'ejs')
 //___________________
